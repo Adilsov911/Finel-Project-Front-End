@@ -206,4 +206,154 @@ header {
   right: 3%;
   padding: 10px 70px;
   background-color: black;
+}
+
+#Collections {
+  padding: 40px;
+}
+#Collections .title h6 {
+  font-size: 25px;
+}
+#Collections .title img {
+  width: 20%;
+}
+#Collections .product {
+  width: 20%;
+  margin-top: 40px;
+  text-align: center;
+  background-color: #F7F7F7;
+  padding: 10px;
+  border-radius: 10px;
+}
+#Collections .product img {
+  width: 100%;
+}
+#Collections .product h5 {
+  font-size: 30px;
+  font-weight: 200;
+}
+#Collections .product a {
+  color: #A07936;
+}
+#Collections .product hr {
+  width: 20%;
+  margin-left: 40%;
+  color: #A07936;
+}
+#Collections .product:hover {
+  background-color: #fde3b2;
+  transition: 0.5s;
+}
+
+#NewProduct {
+  padding: 40px;
+  background-color: #f7f7f7;
+}
+#NewProduct .title h6 {
+  font-size: 25px;
+}
+#NewProduct .title img {
+  width: 20%;
+}
+#NewProduct img {
+  width: 100%;
+}
+#NewProduct .product {
+  overflow: hidden;
+  padding: 6px;
+  position: relative;
+  width: 30%;
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color: #fff;
+}
+#NewProduct .product img {
+  width: 89%;
+}
+#NewProduct .product .sale {
+  position: absolute;
+  top: 7%;
+  right: 7%;
+  background-color: #A07936;
+  padding: 12px 10px;
+  border-radius: 100%;
+  color: #F7F7F7;
+}
+#NewProduct .product .sale h3 {
+  font-size: 26px;
+  font-weight: 300;
+}
+#NewProduct .product a {
+  color: black;
+  margin-left: 20px;
+}
+#NewProduct .product .icons {
+  display: none;
+  position: absolute;
+  bottom: 21%;
+  width: 97%;
+  transition: 0.7s;
+}
+#NewProduct .product .icons i {
+  margin-left: 5px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+#NewProduct .product .title {
+  margin-left: 20px;
+}
+#NewProduct .product .title h5 {
+  font-size: 16px;
+}
+#NewProduct .product .title h6 {
+  font-size: 12px;
+}
+#NewProduct .product .title i {
+  color: #A07936;
+}
+#NewProduct .product .price {
+  margin-right: 20px;
+}
+#NewProduct .product .price h4 {
+  color: #A07936;
+}
+#NewProduct .product .price h6 {
+  font-size: 12px;
+  color: #8d8686;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+#NewProduct .product:hover .icons {
+  display: block;
+  transition: 0.5s;
+}
+#NewProduct .product:hover .icons i {
+  transition: 0.5s;
+}
+#NewProduct .product:hover {
+  box-shadow: -2px 1px 20px 2px grey;
+  transition: 0.5s;
+}
+
+#AboutHome {
+  background-image: url(https://cdn.shopify.com/s/files/1/0908/7252/t/4/assets/home_banner_image.png?v=70259897691980875851627441366);
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 3%;
+}
+#AboutHome h1 {
+  color: #F7F7F7;
+  margin-top: 30px;
+  width: 60%;
+  font-size: 20px;
+  margin-left: 20%;
+}
+#AboutHome hr {
+  width: 20%;
+  margin-left: 41%;
+  color: #daa03d;
+}
+#AboutHome .btn {
+  color: #daa03d;
 }/*# sourceMappingURL=style.css.map */

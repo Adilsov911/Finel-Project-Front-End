@@ -183,5 +183,156 @@ header{
   right: 3%;
   padding: 10px 70px;
   background-color: black;
+  }
 }
+#Collections{
+  padding: 40px;
+  .title h6{
+    font-size: 25px;
+  }
+  .title img{
+    width: 20%;
+  }
+  .product{
+    width: 20%;
+    margin-top: 40px;
+    text-align: center;
+    background-color: #F7F7F7;
+    padding: 10px;
+    border-radius: 10px;
+    img{
+      width: 100%;
+    }
+    h5{
+      font-size: 30px;
+      font-weight: 200;
+    }
+    a{
+      color: #A07936;
+    }
+    hr{
+      width: 20%;
+      margin-left: 40%;
+      color: #A07936;
+    }
+
+  }
+  .product:hover{
+    background-color: #fde3b2;
+    transition: .5s;
+  }
+}
+#NewProduct{
+  padding: 40px;
+  background-color: #f7f7f7;
+  .title h6{
+    font-size: 25px;
+  }
+  .title img{
+    width: 20%;
+  }
+
+  img{
+    width: 100%;
+  }
+  .product{
+    overflow: hidden;
+    padding: 6px;
+    img{
+      width: 89%;
+    }
+    .sale{
+      position: absolute;
+      top: 7%;
+      right: 7%;
+      background-color: #A07936;
+      padding: 12px 10px;
+      border-radius: 100%;
+      color: #F7F7F7;
+      h3{
+        font-size: 26px;
+        font-weight: 300;
+      }
+    }
+    position: relative;
+    width: 30%;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: #fff;
+    a{
+      color: black;
+      margin-left: 20px;
+    }
+    .icons{
+      display: none;
+      position: absolute;
+      bottom:21%;
+      
+      width: 97%;
+      transition: .7s;
+      i{
+        margin-left: 5px;
+        font-size: 20px;
+        transition: .5s;
+      }
+    }
+    .title{
+      margin-left: 20px;
+      h5{
+        font-size: 16px;
+      }
+      h6{
+        font-size: 12px;
+      }
+      i{
+        color: #A07936;
+      }
+    }
+    .price{
+      margin-right: 20px;
+      h4{
+        color: #A07936;
+      }
+      h6{
+        font-size: 12px;
+        color: #8d8686;
+        text-decoration-line: line-through;
+      }
+    }
+   
+  }
+
+  .product:hover .icons{
+    i{
+      transition: .5s;
+    }
+    display: block;
+    transition: .5s;
+  }
+  .product:hover{
+    box-shadow: -2px 1px 20px 2px grey;
+    transition: 0.5s;
+  }
+}
+#AboutHome{
+  background-image: url(https://cdn.shopify.com/s/files/1/0908/7252/t/4/assets/home_banner_image.png?v=70259897691980875851627441366);
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 3%;
+  h1{
+    color: #F7F7F7;
+    margin-top: 30px;
+    width: 60%;
+    font-size: 20px;
+    margin-left: 20%;
+  }
+  hr{
+    width: 20%;
+    margin-left:41%;
+    color: #daa03d;
+  }
+  .btn{
+    color: #daa03d;
+  }
 }
