@@ -1,0 +1,187 @@
+* a{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.phone h6{
+  font-size: 14px;
+}
+.Register{
+  margin-left: 20px;
+  margin-top: 4px;
+  
+}
+.Register a{
+  font-size: 14px;
+  color: #b0b0b0;
+}
+.logos{
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.logos i{
+  font-size: 14px;
+  margin-left: 10px;
+  color: black;
+}
+.custom-select{
+  margin-top: 6px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.custom-select select{
+  border: none;
+}
+.login h6{
+  font-size: 14px;
+  font-weight: 400;
+}
+.logos i:hover{
+  color: gold;
+  transition: .5s;
+}
+.Register a:hover{
+  color: gold;
+}
+.logo{
+  margin-top: 18px;
+}
+.Menu{
+  margin-top: 15px;
+  align-items:center;
+  text-align: end;
+}
+.Menu a{
+  color: black;
+  margin-left: 50px;
+  font-size: 17px;
+}
+.Menu a:hover{
+  color: gold;
+  transition: .5s;
+}
+.Menu a i{
+  margin-left: 5px
+}
+.Tabmenu div{
+  margin-right: 18px;
+}
+header{
+  padding-bottom: 30px;
+  position: static;
+}
+.Tabmenu{
+  background: #ffffff url(//cdn.shopify.com/s/files/1/0908/7252/t/4/assets/menu_image_1.png?v=1649241…) no-repeat center bottom;
+  min-height: 430px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.Menu a:hover .Tabmenu{
+  display: block !important;
+}
+.Carts{
+ margin-top: 17px;
+ margin-left: 35px;
+}
+.Carts i{
+  margin-left: 30px;
+  margin-top: 6px;
+  color: black;
+}
+.Carts h5 a{
+  margin-left: 15px;
+  color: black;
+}
+header{
+  position: sticky;
+}
+.Slider{
+  position: relative;
+  img{
+    width: 100%;
+  }
+  .slider-items{
+    position: relative;
+    .about{
+      position: absolute;
+      top: 20%;
+      left: 33%;
+      font-size: 70px;
+      font-weight: 100;
+      color: #707070;
+    }
+    .img-slider{
+      position: absolute;
+      top: 35%;
+      left: 25%;
+    }
+  }
+  .priv-arrow{
+    position: absolute;
+    z-index: 999999;
+    bottom: 50%;
+    left: 0%;
+    font-size: 40px;
+   color: #b0b0b0;
+   width: 50px;
+   height: 10px;
+   text-align: center;
+   display: inline-block;
+   cursor: pointer;
+  }
+  .next-arrow{
+    position: absolute;
+    z-index: 999999;
+    bottom: 50%;
+    right: 0%;
+    font-size: 40px;
+    color: #b0b0b0;
+   width: 50px;
+   height: 50px;
+   text-align: center;
+   display: inline-block;
+   cursor: pointer;
+  }
+ .button .btn{ 
+  position: absolute;
+      top: 50%;
+      left: 38%;
+      padding: 10px 70px;
+      background-color: black;
+ }
+ .about-2{
+  position: absolute;
+  top: 45%;
+  left: 36%;
+  font-size: 70px;
+  font-weight: 100;
+  color: #707070;
+}
+.img-slider-2{
+  position: absolute;
+  
+  top: 20%;
+  left: 29%;
+}
+.button-2 .btn{
+  position: absolute;
+  top: 62%;
+  left: 42%;
+  padding: 10px 70px;
+  background-color: black;
+}
+
+.img-slider-3{
+  position: absolute;
+  
+  top: 20%;
+  right: 3%;
+}
+.button-3 .btn{
+  position: absolute;
+  top: 52%;
+  right: 3%;
+  padding: 10px 70px;
+  background-color: black;
+}
+}
