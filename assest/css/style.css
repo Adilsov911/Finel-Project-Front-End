@@ -115,11 +115,6 @@ header {
   color: black;
 }
 
-header {
-  position: -webkit-sticky;
-  position: sticky;
-}
-
 .Slider {
   position: relative;
 }
@@ -356,4 +351,295 @@ header {
 }
 #AboutHome .btn {
   color: #daa03d;
+}
+
+#Blog-home {
+  padding: 40px;
+}
+#Blog-home .title h6 {
+  font-weight: 500;
+  font-size: 20px;
+}
+#Blog-home .title img {
+  width: 20%;
+}
+#Blog-home .newsb {
+  margin-top: 50px;
+}
+#Blog-home .newsb .sa {
+  margin-top: 15px;
+}
+#Blog-home .newsb .title a {
+  font-size: 15px;
+  color: #A07936;
+}
+#Blog-home .newsb .title span {
+  color: #707070;
+}
+#Blog-home .newsb .title h6 {
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+#Blog-home .newsb .time {
+  margin-top: 10px;
+  border-radius: 10px 10px 0 0;
+  background-color: #A07936;
+  height: 30%;
+  margin-right: 10px;
+}
+#Blog-home .newsb .time h4 {
+  margin-left: 9px;
+  color: #F7F7F7;
+}
+#Blog-home .newsb .time h1 {
+  margin-left: 10px;
+  font-weight: 300;
+}
+
+.me {
+  background-color: #f7f7f7;
+}
+
+.title h6 {
+  font-size: 25px;
+}
+
+.title img {
+  width: 20%;
+}
+
+.carousel {
+  padding: 50px;
+  display: flex;
+}
+.carousel img {
+  width: 100%;
+}
+.carousel .product {
+  width: 100px;
+  padding: 6px;
+  transition: witdth 2s;
+  position: relative;
+  width: 30%;
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color: #fff;
+}
+.carousel .product img {
+  width: 89%;
+}
+.carousel .product .sale {
+  position: absolute;
+  top: 7%;
+  right: 7%;
+  background-color: #A07936;
+  padding: 12px 10px;
+  border-radius: 100%;
+  color: #F7F7F7;
+}
+.carousel .product .sale h3 {
+  font-size: 26px;
+  font-weight: 300;
+}
+.carousel .product a {
+  color: black;
+  margin-left: 20px;
+}
+.carousel .product .icons {
+  display: none;
+  position: absolute;
+  bottom: 23%;
+  width: 97%;
+  transition: 0.7s;
+}
+.carousel .product .icons i {
+  margin-left: 5px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.carousel .product .title {
+  margin-left: 20px;
+}
+.carousel .product .title h5 {
+  font-size: 16px;
+}
+.carousel .product .title h6 {
+  font-size: 12px;
+}
+.carousel .product .title i {
+  color: #A07936;
+}
+.carousel .product .price {
+  margin-right: 20px;
+}
+.carousel .product .price h4 {
+  color: #A07936;
+}
+.carousel .product .price h6 {
+  font-size: 12px;
+  color: #8d8686;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+.carousel .priv-arrow {
+  position: absolute;
+  z-index: 999999;
+  bottom: 50%;
+  left: 0%;
+  font-size: 40px;
+  color: #b0b0b0;
+  width: 50px;
+  height: 10px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+.carousel .next-arrow {
+  position: absolute;
+  z-index: 999999;
+  bottom: 50%;
+  right: 0%;
+  font-size: 40px;
+  color: #b0b0b0;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+.carousel .product:hover .icons {
+  display: block;
+  transition: 0.5s;
+}
+.carousel .product:hover .icons i {
+  transition: 0.5s;
+}
+.carousel .product:hover img {
+  width: 99%;
+  transition: 0.5s;
+}
+
+#Brands {
+  background-color: #f7f7f7;
+  padding: 30px;
+}
+#Brands .titles {
+  margin-bottom: 20px;
+}
+#Brands .titles h6 {
+  font-size: 25px;
+  font-weight: 400;
+}
+#Brands .titles img {
+  width: 20%;
+}
+#Brands .brand {
+  margin-top: 30px;
+}
+#Brands .carousel-brand .priv-arrow {
+  position: absolute;
+  z-index: 999999;
+  bottom: 80%;
+  left: 0%;
+  font-size: 20px;
+  color: #b0b0b0;
+  width: 50px;
+  height: 10px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+#Brands .carousel-brand .next-arrow {
+  position: absolute;
+  z-index: 999999;
+  bottom: 15%;
+  right: 0%;
+  font-size: 20px;
+  color: #b0b0b0;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+#Brands .carousel-brand .imgg:hover {
+  transition: 0.1s;
+}
+#Brands .carousel-brand .imgg:hover img {
+  width: 70%;
+  transition: 0.5s;
+}
+
+#Mail {
+  padding: 30px;
+}
+#Mail .titles {
+  margin-bottom: 20px;
+}
+#Mail .titles h6 {
+  font-size: 25px;
+  font-weight: 400;
+}
+#Mail .titles img {
+  width: 20%;
+}
+#Mail .mail-area h6 {
+  font-size: 20px;
+  padding: 20px;
+  font-weight: 400;
+}
+#Mail .mail-area input {
+  width: 45%;
+  padding: 7px 5px;
+  border: 1px solid gray;
+}
+#Mail .mail-area i {
+  cursor: pointer;
+  padding: 11px;
+  background-color: #A07936;
+  color: #F7F7F7;
+  border: 1px solid gray;
+}
+
+#footer {
+  padding: 40px;
+}
+#footer .content li {
+  margin-bottom: 7px;
+}
+#footer .content ul li:hover a {
+  color: #A07936;
+  transition: 0.2s;
+}
+#footer .content ul h3 {
+  font-weight: 400;
+}
+#footer .content a {
+  color: black;
+}
+
+#Fotter-end {
+  background-color: #21201F;
+  padding: 30px;
+}
+#Fotter-end .div i {
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 30px;
+  color: #F7F7F7;
+}
+#Fotter-end .div i:hover {
+  transition: 0.5s;
+  color: #A07936;
+}
+#Fotter-end .fot i {
+  color: #F7F7F7;
+  margin-right: 5px;
+}
+#Fotter-end .fot a {
+  color: #F7F7F7;
+}
+#Fotter-end .fot h6 {
+  color: #F7F7F7;
 }/*# sourceMappingURL=style.css.map */

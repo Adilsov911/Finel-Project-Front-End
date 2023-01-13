@@ -92,9 +92,7 @@ header{
   margin-left: 15px;
   color: black;
 }
-header{
-  position: sticky;
-}
+
 .Slider{
   position: relative;
   img{
@@ -336,3 +334,315 @@ header{
     color: #daa03d;
   }
 }
+#Blog-home{
+  padding: 40px;
+  .title h6{
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .title img{
+    width: 20%;
+  }
+  
+  .newsb{
+    margin-top: 50px;
+    .sa{
+      margin-top: 15px;
+      
+    }
+   .title{
+      a{
+        font-size: 15px;
+        color: #A07936;
+      }
+      span{
+        color: #707070;
+      }
+      h6{
+        font-size: 14px;
+        margin-top: 10px;
+        font-weight: 400;
+      }
+   }
+    .time{
+      margin-top: 10px;
+     border-radius: 10px 10px 0 0 ;
+      background-color: #A07936;
+      height: 30%;
+      margin-right: 10px;
+      h4{
+        margin-left: 9px;
+        color: #F7F7F7;
+      }
+      h1{
+        margin-left: 10px;
+        font-weight: 300;
+      }
+      
+    }
+  }
+}
+.me{
+  background-color: #f7f7f7;
+}
+.title h6{
+  font-size: 25px;
+}
+.title img{
+  width: 20%;
+}
+.carousel{
+  padding: 50px;
+  display: flex;
+ 
+  img{
+    width: 100%;
+  }
+  .product{
+    width: 100px;
+    padding: 6px;
+    transition: witdth 2s ;
+    img{
+      width: 89%;
+    }
+    .sale{
+      position: absolute;
+      top: 7%;
+      right: 7%;
+      background-color: #A07936;
+      padding: 12px 10px;
+      border-radius: 100%;
+      color: #F7F7F7;
+      h3{
+        font-size: 26px;
+        font-weight: 300;
+      }
+    }
+    position: relative;
+    width: 30%;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: #fff;
+    a{
+      color: black;
+      margin-left: 20px;
+    }
+    .icons{
+      display: none;
+      position: absolute;
+      bottom:23%;
+      
+      width: 97%;
+      transition: .7s;
+      i{
+        margin-left: 5px;
+        font-size: 20px;
+        transition: .5s;
+      }
+    }
+    .title{
+      margin-left: 20px;
+      h5{
+        font-size: 16px;
+      }
+      h6{
+        font-size: 12px;
+      }
+      i{
+        color: #A07936;
+      }
+    }
+    .price{
+      margin-right: 20px;
+      h4{
+        color: #A07936;
+      }
+      h6{
+        font-size: 12px;
+        color: #8d8686;
+        text-decoration-line: line-through;
+      }
+    }
+   
+  }
+  .priv-arrow{
+    position: absolute;
+    z-index: 999999;
+    bottom: 50%;
+    left: 0%;
+    font-size: 40px;
+   color: #b0b0b0;
+   width: 50px;
+   height: 10px;
+   text-align: center;
+   display: inline-block;
+   cursor: pointer;
+  }
+  .next-arrow{
+    position: absolute;
+    z-index: 999999;
+    bottom: 50%;
+    right: 0%;
+    font-size: 40px;
+    color: #b0b0b0;
+   width: 50px;
+   height: 50px;
+   text-align: center;
+   display: inline-block;
+   cursor: pointer;
+  }
+  .product:hover .icons{
+    i{
+      transition: .5s;
+    }
+    display: block;
+    transition: .5s;
+  }
+  .product:hover{
+    img{
+
+      width: 99%;
+      transition: 0.5s;
+    }
+  }
+}
+#Brands{
+  background-color: #f7f7f7;
+  padding: 30px;
+  .titles{
+    margin-bottom: 20px;
+  }
+  .titles h6{
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .titles img{
+    width: 20%;
+  }
+  .brand{
+    
+    margin-top: 30px;
+  }
+  .carousel-brand{
+    .priv-arrow{
+      position: absolute;
+      z-index: 999999;
+      bottom: 80%;
+      left: 0%;
+      font-size: 20px;
+     color: #b0b0b0;
+     width: 50px;
+     height: 10px;
+     text-align: center;
+     display: inline-block;
+     cursor: pointer;
+    }
+    .next-arrow{
+      position: absolute;
+      z-index: 999999;
+      bottom: 15%;
+      right: 0%;
+      font-size: 20px;
+      color: #b0b0b0;
+     width: 50px;
+     height: 50px;
+     text-align: center;
+     display: inline-block;
+     cursor: pointer;
+    }
+  }
+  .carousel-brand .imgg:hover{
+    img{
+      width: 70%;
+      transition: .5s;
+    }
+    transition: .10s;
+  }
+}
+#Mail{
+  padding: 30px;
+  .titles{
+    margin-bottom: 20px;
+  }
+  .titles h6{
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .titles img{
+    width: 20%;
+  }
+  .mail-area{
+    h6{
+      font-size: 20px;
+     padding: 20px;
+     font-weight: 400;
+    }
+    
+    input{
+      width: 45%;
+      padding: 7px 5px;
+      
+      border: 1px solid gray;
+    }
+    
+
+      i{
+        cursor: pointer;
+        padding: 11px;
+       background-color: #A07936;
+       color: #F7F7F7;
+        border: 1px solid gray;
+        
+      }
+    
+  }
+}
+#footer{
+  padding: 40px;
+  .content{
+    li{
+      margin-bottom: 7px;
+    }
+   ul li:hover a{
+      color: #A07936;
+      transition: .2s;
+    }
+    ul{
+      h3{
+        font-weight: 400;
+      }
+    }
+    a{
+      color: black;
+    }
+  }
+}
+#Fotter-end{
+  background-color: #21201F;
+  padding: 30px;
+  .div{
+    i{
+      cursor: pointer;
+      margin-left: 10px;
+      font-size: 30px;
+      color: #F7F7F7;
+    }
+    i:hover{
+      transition: .5s;
+      color: #A07936;
+    }
+  }
+  .fot{
+    i{
+      color: #F7F7F7;
+      margin-right: 5px;
+    }
+    a{
+      color: #F7F7F7;
+    }
+    h6{
+      color: #F7F7F7;
+    }
+  }
+}
+
