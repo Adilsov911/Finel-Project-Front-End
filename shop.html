@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assest/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assest/css/slick.css">
+    <link rel="stylesheet" href="assest/css/style.css">
+    <title>Final</title>
+</head>
+<body>
+    <div id="top" >
+        <div class="container d-flex">
+          <div class="col-lg-3">
+            <div class="phone m-2">
+              <h6>PHONE SHOPING (01) 123 456 UJ</h6>
+            </div>
+          
+          </div>
+          <div class="col-lg-9 d-flex justify-content-end" >
+            <div class="login m-2">
+              
+              <h6 > <a class=" text-dark" href=""> MY ACCOUNT</a></h6>
+              
+            </div>
+            <div class="Register">
+              <a class=" text-dark" href="">LOGIN</a> /  <a class="text-dark" href="">CREATE AN ACCOUNT</a>
+            </div>
+            <div class="logos">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+              <div class="custom-select" style="width:200px;">
+                <select>
+                  <option value="1">AZN</option>
+                  <option value="2">USD</option>
+                  <option value="3">EURO</option>
+                </select>
+              </div>
+              
+          </div>
+        </div>
+    </div>
+   
+    <header class="mt-3">
+      <hr>
+      <div class="container d-flex">
+        <div class="logo col-4">
+         <a href="home.html"><img src="assest/img/logo/logo.jpg" alt=""></a>
+        </div>
+        <div class="Menu col-lg-5 d-flex justify-content-end position-relative">
+          <a href="">HOME</a>
+          <div class="tab">
+            <a class="hov" href="shop.html">COLLECTIONS<i class="fa-solid fa-chevron-down"></i></a>
+            <div class="Tabmenu position-absolute d-flex d-none">
+              
+              <div class="text-center">
+                <h4>Dolerum</h1>
+                <h5>salam</h5>
+                <h5>salam</h5>
+                <h5>salam</h5>
+              </div>
+              <div class="text-center">
+                <h4>Dolerum</h1>
+                <h5>salam</h5>
+                <h5>salam</h5>
+                <h5>salam</h5>
+              </div>
+              <div class="text-center">
+                <h4>Dolerum</h1>
+                <h5>salam</h5>
+                <h5>salam</h5>
+                <h5>salam</h5>
+              </div>
+              <div class="text-center">
+                <h4>Dolerum</h1>
+                <h5>salam</h5>
+                <h5>salam</h5>
+                <h5>salam</h5>
+              </div>
+            </div>
+          </div>
+          
+          <a href="">BLOG<i class="fa-solid fa-chevron-down"></i></a>
+          <a href="">CONTACT</a>
+        </div>
+        <div class="Carts col-lg-3 text-center d-flex">
+          <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          <h5> <a href=""> CART | <span>0</span></a></h5>
+        </div>
+      </div>
+    </header>
+    
+    <section id="top-2">
+        <div class="container d-flex tp">
+            <span>Home /</span> <h6>Products</h6>
+        </div>
+    </section>
+
+    <section>
+        <div class="container tp-2">
+
+            <h1>PRODUCTS</h1>
+        </div>
+    </section>
+
+    <section id="Filter">
+        <div class="container">
+            <div class="filter d-flex justify-content-between">
+                <div class="col-lg-8">
+                    <h6>Filter By</h6>
+                    <div class="header-filter wrapper medium-down--hide">
+                    
+                        <select class="filter-item-selector FilterByCollections">
+                          <option value="" disabled selected>Product type</option>
+                          <option value="all">ALL</option>
+                          <option value="all">Hoodies Wear</option>
+                          <option value="all">Sweaters Wear</option>
+                        </select>
+                    
+                        <select class="filter-item-selector FilterBySizes">
+                          <option value="" disabled selected>Color</option>
+                          <option value="all">All</option>
+                          <option value="all">Black</option>
+                          <option value="all">Green</option>
+                          <option value="all">Purple</option>
+                          <option value="all">Red</option>
+                          <option value="all">White</option>
+                        </select>
+                    
+                        <select class="filter-item-selector FilterByVendors">
+                          <option value="" disabled selected>Size</option>
+                          <option value="all">All</option>
+                          <option value="all">Small</option>
+                          <option value="all">Mideum</option>
+                          <option value="all">Large</option>
+                        </select>
+                    
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="header-filter wrapper medium-down--hide right ">
+                        
+                        <h6 class="text-start">Shorty By</h6>
+                        <select class="filter-item-selector FilterByVendors">
+                            <option value="" disabled selected>Alphabetically,  A-Z</option>
+                            <option value="all">Featured</option>
+                            <option value="all">Best Selling</option>
+                            <option value="all">Alphabetically,  Z-A</option>
+                            <option value="all">Price Low to High</option>
+                            <option value="all">Price Hihgh to Low</option>
+                          </select>
+                    </div>
+                      
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Shop">
+        <div class="container">
+            <div class="row">
+                <div class="Products d-flex  row  col-lg-12 justify-content-between">
+                    <div class="product col-lg-3">
+                        <a href="product-detail.html"><img src="assest/img/Product/10_16854be2-a731-4970-984e-7f6e483d2405_grande.png" alt=""></a>
+                        <div class="icons text-center">
+                          <hr>
+                         <a href=""><i class="fa-solid fa-bars"></i></a> 
+                         <a href=""> <i class="fa-solid fa-eye"></i></a> 
+                        <a href=""><i class="fa-solid fa-basket-shopping"></i></a> 
+                       </div>
+                       <hr>
+                       <div class="sale">
+                        <h3>Sale</h3>
+                       </div>
+                       <div class="bottom d-flex justify-content-around">
+                        
+                         <div class="title">
+                           <h5>Curabitur cursus dignis</h5>
+                           <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i> </h6>
+                         </div>
+                         <div class="price text-end">
+                           <h4>259$</h4>
+                           <h6>300$</h6>
+                         </div>
+                       </div>
+                       </div>
+
+                       
+
+                       <div class="product col-lg-2">
+                        <a href=""><img src="assest/img/Product/10_16854be2-a731-4970-984e-7f6e483d2405_grande.png" alt=""></a>
+                        <div class="icons text-center">
+                          <hr>
+                         <a href=""><i class="fa-solid fa-bars"></i></a> 
+                         <a href=""> <i class="fa-solid fa-eye"></i></a> 
+                        <a href=""><i class="fa-solid fa-basket-shopping"></i></a> 
+                       </div>
+                       <hr>
+                       <div class="sale">
+                        <h3>Sale</h3>
+                       </div>
+                       <div class="bottom d-flex justify-content-between">
+                        
+                         <div class="title">
+                           <h5>Curabitur cursus dignis</h5>
+                           <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i> </h6>
+                         </div>
+                         <div class="price text-end">
+                           <h4>259$</h4>
+                           <h6>300$</h6>
+                         </div>
+                       </div>
+                       </div>
+
+                       <div class="product col-lg-2">
+                        <a href=""><img src="assest/img/Product/10_16854be2-a731-4970-984e-7f6e483d2405_grande.png" alt=""></a>
+                        <div class="icons text-center">
+                          <hr>
+                         <a href=""><i class="fa-solid fa-bars"></i></a> 
+                         <a href=""> <i class="fa-solid fa-eye"></i></a> 
+                        <a href=""><i class="fa-solid fa-basket-shopping"></i></a> 
+                       </div>
+                       <hr>
+                       
+                       <div class="bottom d-flex justify-content-between">
+                        
+                         <div class="title">
+                           <h5>Curabitur cursus dignis</h5>
+                           <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i> </h6>
+                         </div>
+                         <div class="price text-end">
+                           <h4>259$</h4>
+                           <h6>300$</h6>
+                         </div>
+                       </div>
+                     </div>
+
+                     <div class="product col-lg-2">
+                        <a href=""><img src="assest/img/Product/10_16854be2-a731-4970-984e-7f6e483d2405_grande.png" alt=""></a>
+                        <div class="icons text-center">
+                          <hr>
+                         <a href=""><i class="fa-solid fa-bars"></i></a> 
+                         <a href=""> <i class="fa-solid fa-eye"></i></a> 
+                        <a href=""><i class="fa-solid fa-basket-shopping"></i></a> 
+                       </div>
+                       <hr>
+                       
+                       <div class="bottom d-flex justify-content-between">
+                        
+                         <div class="title">
+                           <h5>Curabitur cursus dignis</h5>
+                           <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i> </h6>
+                         </div>
+                         <div class="price text-end">
+                           <h4>259$</h4>
+                           <h6>300$</h6>
+                         </div>
+                       </div>
+                       </div>
+
+                       <div class="product col-lg-2">
+                        <a href=""><img src="assest/img/Product/10_16854be2-a731-4970-984e-7f6e483d2405_grande.png" alt=""></a>
+                        <div class="icons text-center">
+                          <hr>
+                         <a href=""><i class="fa-solid fa-bars"></i></a> 
+                         <a href=""> <i class="fa-solid fa-eye"></i></a> 
+                        <a href=""><i class="fa-solid fa-basket-shopping"></i></a> 
+                       </div>
+                       <hr>
+                      
+                       <div class="bottom d-flex justify-content-between">
+                        
+                         <div class="title">
+                           <h5>Curabitur cursus dignis</h5>
+                           <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i> </h6>
+                         </div>
+                         <div class="price text-end">
+                           <h4>259$</h4>
+                           <h6>300$</h6>
+                         </div>
+                       </div>
+                       </div>
+
+                       <div class="product col-lg-2">
+                        <a href=""><img src="assest/img/Product/10_16854be2-a731-4970-984e-7f6e483d2405_grande.png" alt=""></a>
+                        <div class="icons text-center">
+                          <hr>
+                         <a href=""><i class="fa-solid fa-bars"></i></a> 
+                         <a href=""> <i class="fa-solid fa-eye"></i></a> 
+                        <a href=""><i class="fa-solid fa-basket-shopping"></i></a> 
+                       </div>
+                       <hr>
+                       
+                       <div class="bottom d-flex justify-content-between">
+                        
+                         <div class="title">
+                           <h5>Curabitur cursus dignis</h5>
+                           <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i> </h6>
+                         </div>
+                         <div class="price text-end">
+                           <h4>259$</h4>
+                           <h6>300$</h6>
+                         </div>
+                       </div>
+                       </div>
+
+                       <div class="product col-lg-2">
+                        <a href=""><img src="assest/img/Product/10_16854be2-a731-4970-984e-7f6e483d2405_grande.png" alt=""></a>
+                        <div class="icons text-center">
+                          <hr>
+                         <a href=""><i class="fa-solid fa-bars"></i></a> 
+                         <a href=""> <i class="fa-solid fa-eye"></i></a> 
+                        <a href=""><i class="fa-solid fa-basket-shopping"></i></a> 
+                       </div>
+                       <hr>
+                       <div class="sale">
+                        <h3>Sale</h3>
+                       </div>
+                       <div class="bottom d-flex justify-content-between">
+                        
+                         <div class="title">
+                           <h5>Curabitur cursus dignis</h5>
+                           <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i> </h6>
+                         </div>
+                         <div class="price text-end">
+                           <h4>259$</h4>
+                           <h6>300$</h6>
+                         </div>
+                       </div>
+                       </div>
+
+                       <div class="product col-lg-2">
+                        <a href=""><img src="assest/img/Product/10_16854be2-a731-4970-984e-7f6e483d2405_grande.png" alt=""></a>
+                        <div class="icons text-center">
+                          <hr>
+                         <a href=""><i class="fa-solid fa-bars"></i></a> 
+                         <a href=""> <i class="fa-solid fa-eye"></i></a> 
+                        <a href=""><i class="fa-solid fa-basket-shopping"></i></a> 
+                       </div>
+                       <hr>
+                       
+                       <div class="bottom d-flex justify-content-between">
+                        
+                         <div class="title">
+                           <h5>Curabitur cursus dignis</h5>
+                           <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i> </h6>
+                         </div>
+                         <div class="price text-end">
+                           <h4>259$</h4>
+                           <h6>300$</h6>
+                         </div>
+                       </div>
+                       </div>
+
+                       <div class="product col-lg-2">
+                        <a href=""><img src="assest/img/Product/10_16854be2-a731-4970-984e-7f6e483d2405_grande.png" alt=""></a>
+                        <div class="icons text-center">
+                          <hr>
+                         <a href=""><i class="fa-solid fa-bars"></i></a> 
+                         <a href=""> <i class="fa-solid fa-eye"></i></a> 
+                        <a href=""><i class="fa-solid fa-basket-shopping"></i></a> 
+                       </div>
+                       <hr>
+                       
+                       <div class="bottom d-flex justify-content-between">
+                        
+                         <div class="title">
+                           <h5>Curabitur cursus dignis</h5>
+                           <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i> </h6>
+                         </div>
+                         <div class="price text-end">
+                           <h4>259$</h4>
+                           <h6>300$</h6>
+                         </div>
+                       </div>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Mail">
+      <div class="container">
+        <div class="titles text-center p-4">
+          <h6>NEWSLETTER</h6>
+          <img src="https://cdn.shopify.com/s/files/1/0908/7252/t/4/assets/home_line.png?v=178078056696408182271627441368" alt="">
+        </div>
+        <div class="text-center mail-area">
+          <h6>We promise only send the good things</h6>
+          <input type="email" placeholder="Your Email Address"><i class="fa-regular fa-paper-plane"></i>
+        </div>
+      </div>
+    </section>
+<hr>
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-content d-flex">
+
+          <div class="content col-lg-3">
+           
+            <div class="group">
+             
+              
+              <ul><h3>ABOUT US</h3>
+                
+                <li class="list-unstyled">
+                  <a href="/">Store Locations</a>
+                </li>
+                
+                <li class="list-unstyled">
+                  <a href="/">Whosesalers</a>
+                </li>
+                
+                <li class="list-unstyled">
+                  <a href="/">Map Site</a>
+                </li>
+                
+                <li class="list-unstyled">
+                  <a href="/">Contact Us</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="content col-lg-3">
+           
+            <div class="group">
+             
+              
+              <ul><h3>INFORMATION</h3>
+                
+                <li class="list-unstyled">
+                  <a href="/">Help & FAQs</a>
+                </li>
+                
+                <li class="list-unstyled">
+                  <a href="/">Advance Search</a>
+                </li>
+                
+                <li class="list-unstyled">
+                  <a href="/">Gift Cards</a>
+                </li>
+                
+                <li class="list-unstyled">
+                  <a href="/">Shop By Brands</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="content col-lg-3">
+           
+            <div class="group">
+             
+              
+              <ul><h3>ACCOUNT</h3>
+                
+                <li class="list-unstyled">
+                  <a href="/">Preferences</a>
+                </li>
+                
+                <li class="list-unstyled">
+                  <a href="/">Order History</a>
+                </li>
+                
+                <li class="list-unstyled">
+                  <a href="/">Cart Page</a>
+                </li>
+                
+                <li class="list-unstyled">
+                  <a href="/">Sign In</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="content col-lg-3">
+           
+            <div class="group">
+             
+              
+              <ul><h3>CUSTOMER</h3>
+                
+                <li class="list-unstyled">
+                  <a href="/">Search Advanced</a>
+                </li>
+                
+                <li class="list-unstyled">
+                  <a href="/">Return Policy</a>
+                </li>
+                
+                <li class="list-unstyled">
+                  <a href="/">Privacy Policy</a>
+                </li>
+                
+                <li class="list-unstyled">
+                  <a href="/">Help & Contact</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section id="Fotter-end">
+      <div class="container d-flex justify-content-between">
+        <div class="fot">
+          <h6><i class="fa-brands fa-squarespace"></i><a href="">2023 Jewelry - Themeforshop</a>. All Rights Reserved.</h6>
+        </div>
+        <div class="div">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-cc-amex"></i>
+          <i class="fa-brands fa-cc-paypal"></i>
+          <i class="fa-solid fa-money-bills"></i>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assest/js/slick.min.js"></script>
+    <script src="assest/js/main.js"></script>
+  </body>
+</html>
