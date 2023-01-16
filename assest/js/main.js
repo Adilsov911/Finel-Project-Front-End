@@ -31,8 +31,8 @@ $(function(){
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       },
       {
@@ -71,7 +71,7 @@ $(function(){
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 1
         }
       },
       {
@@ -751,7 +751,22 @@ var Quickbeam = (function () {
 })();
 
 
-// Usage:
-var cart = Quickbeam.init({
-  'animationLib': 'gsap'
-});
+(function($) {
+  $(function() {
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); 
+})(jQuery);
