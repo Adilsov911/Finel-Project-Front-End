@@ -62,6 +62,13 @@
     margin-right: 15px;
 
 }
+.Menu .tab:hover .Tabmenu{
+    display: block !important;
+    display: flex !important;
+    h5{
+        transition: .5s;
+    }
+}
 .Menu a:hover{
   color: gold;
   transition: .5s;
@@ -70,6 +77,8 @@
   margin-left: 5px
 }
 .Tabmenu div{
+    margin-top: 40px;
+    padding: 10px;
   margin-right: 18px;
 }
 header{
@@ -77,6 +86,14 @@ header{
   position: static;
 }
 .Tabmenu{
+    h6{
+        font-size: 28px;
+    }
+    height: 52%;
+    top: 11%;
+    right: 19%;
+    z-index: 999999999;
+    width: 41%;
   background: #ffffff url(//cdn.shopify.com/s/files/1/0908/7252/t/4/assets/menu_image_1.png?v=1649241…) no-repeat center bottom;
   min-height: 430px;
   margin-top: 10px;
@@ -506,13 +523,7 @@ header{
     display: block;
     transition: .5s;
   }
-  .product:hover{
-    img{
-
-      width: 99%;
-      transition: 0.5s;
-    }
-  }
+  
 }
 #Brands{
   background-color: #f7f7f7;
@@ -4150,6 +4161,7 @@ header{
     }
 }
 }
+
 .foto{
    img{
     width: 100%;
@@ -4158,6 +4170,13 @@ header{
 @media only screen and (max-width: 600px) {
     .filter-item-selector{
         width: 56% !important;
+    }
+    .reg{
+        width: 100% !important;
+        border-radius: 10px;
+        padding: 30px;
+        margin-left: 0% !important;
+        background-color: #dedee0;
     }
     .Products{
         .product{
@@ -4187,11 +4206,26 @@ header{
       display: none;
     }
     #top{
-        display: none;
+        .phone{
+            text-align: end !important;
+        }
+        .login{
+            display: none !important;
+        }
+        .Register{
+            display: none !important;
+        }
+        .logos{
+            display: none !important;
+        }
+        
     }
      header{
         display: none;
        
+     }
+     #detal{
+        display: block !important;
      }
   
      .about{
@@ -4582,3 +4616,137 @@ article {
   margin: 0 auto;
   padding: 10px;
 }
+.reg{
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 37%;
+    background-color: #dedee0;
+}
+
+
+.search-box{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+  }
+  .input-search{
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: #ffffff;
+    padding-right: 40px;
+    color:rgb(0, 0, 0);
+  }
+  .input-search::placeholder{
+    color:rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+  .btn-search{
+    top:16px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    color:#000000 ;
+    background-color:transparent;
+    pointer-events: painted;  
+  }
+  .btn-search:focus ~ .input-search{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(0, 0, 0, 0.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .input-search:focus{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(0, 0, 0, 0.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .Carts:hover .div{
+    display: block !important;
+  }
+  
+  .div{
+    display: none;
+    top: 13%;
+    right: 15%;
+    background-color: #F7F7F7;
+    z-index: 9999999999999;
+    box-shadow: 2px 1px 8px 0px;
+    border-radius: 10px;
+    border: 1px solid;
+    width: 19%;
+    .imgh{
+        width: 25%;
+        img{
+           width: 100%;
+        }
+    }
+    .bottom{
+        padding: 10px;
+        .btn{
+            margin-top: 5px;
+            border: 1px solid;
+            padding: 0px 50px;
+            background-color: rgb(255, 255, 255);
+        }
+        .btn:hover{
+            background-color: #A07936;
+            color: #F7F7F7;
+        }
+    }
+    .sa{
+        padding: 10px;
+        .price{
+            margin-left: 20px;
+        }
+       
+        
+        .title{
+            h6{
+                color: #000000;
+                margin-right: 10px;
+                font-size: 17px
+                
+            }
+        }
+        span {cursor:pointer; }
+		
+		.minus, .plus{
+			width:20px;
+			height:22px;
+			background:#f2f2f2;
+			border-radius:4px;
+			border:1px solid #ddd;
+             display: inline-block;
+             vertical-align: middle;
+             text-align: center;
+		}
+		input{
+			height:24px;
+              width: 30px;
+              text-align: center;
+              font-size: 16px;
+			border:1px solid #ddd;
+			border-radius:4px;
+             display: inline-block;
+             vertical-align: middle;
+            }
+    }
+  }
+ 

@@ -14,7 +14,7 @@ $(function(){
   $('.carousel').slick({
     infinite: true,
     speed: 300,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 4,
     prevArrow:'<span class="priv-arrow"><i class="fa-solid fa-angle-left"></i></span>',
         nextArrow:'<span class="next-arrow"><i class="fa-solid fa-chevron-right"></i></span>',
@@ -22,7 +22,7 @@ $(function(){
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 3,
           infinite: true,
           
@@ -770,3 +770,21 @@ var Quickbeam = (function () {
     });
   }); 
 })(jQuery);
+
+
+$(document).ready(function() {
+  $('.minus').click(function () {
+    var $input = $(this).parent().find('input');
+    var count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+  });
+  $('.plus').click(function () {
+    var $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+  });
+});
