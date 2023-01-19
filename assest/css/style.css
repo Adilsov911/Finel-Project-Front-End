@@ -3891,6 +3891,12 @@ header {
   .filter-item-selector {
     width: 56% !important;
   }
+  .buy-ptuduct .img {
+    width: 50% !important;
+  }
+  .ph {
+    display: none !important;
+  }
   .reg {
     width: 100% !important;
     border-radius: 10px;
@@ -5314,4 +5320,95 @@ article {
   100% {
     transform: scale(0);
   }
+}
+#buy {
+  padding: 20px;
+}
+#buy .col-lg-2 {
+  width: 14.66%;
+}
+#buy .top {
+  align-items: center;
+  padding: 10px 0px;
+  background-color: #EBEBEB;
+  width: 88%;
+  text-align: center;
+}
+#buy .top .ite {
+  width: 38%;
+}
+#buy .top h5 {
+  font-size: 17px;
+}
+#buy .number {
+  width: 68%;
+}
+#buy span {
+  cursor: pointer;
+}
+#buy .minus, #buy .plus {
+  width: 10px;
+  height: 20px;
+  padding: 8px 5px 8px 5px;
+  vertical-align: middle;
+}
+#buy .total {
+  background-color: #EBEBEB;
+  width: 88%;
+  padding: 10px;
+}
+#buy .total .btn {
+  padding: 5px 100px;
+  font-weight: bold;
+  color: #A07936;
+  background-color: #F7F7F7;
+}
+#buy .total .btn:hover {
+  background-color: #A07936;
+  color: #F7F7F7;
+  transition: 0.5s;
+  border: none;
+}
+#buy .buy-ptuduct {
+  text-align: center;
+  align-items: center;
+}
+#buy .buy-ptuduct P {
+  width: 40%;
+  font-size: 22px;
+  font-weight: bold;
+}
+#buy .buy-ptuduct a {
+  color: #000000;
+}
+#buy .buy-ptuduct i {
+  margin-right: 5px;
+}
+#buy .buy-ptuduct h6 {
+  cursor: pointer;
+  font-size: 20px;
+  width: 55%;
+}
+#buy .buy-ptuduct .title {
+  top: 50%;
+}
+#buy .buy-ptuduct .title h5 {
+  margin-top: 34%;
+  margin-left: 6px;
+}
+#buy .buy-ptuduct .img {
+  align-items: center;
+  width: 45%;
+}
+#buy .buy-ptuduct .img img {
+  width: 100%;
+}
+#buy input {
+  height: 31px;
+  width: 42px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  vertical-align: middle;
 }/*# sourceMappingURL=style.css.map */

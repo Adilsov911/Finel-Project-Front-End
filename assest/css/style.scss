@@ -4191,6 +4191,15 @@ header{
     .filter-item-selector{
         width: 56% !important;
     }
+    .buy-ptuduct{
+      .img{
+        width: 50% !important;
+      }
+    }
+    .ph{
+      display: none !important;
+      
+    }
     .reg{
         width: 100% !important;
         border-radius: 10px;
@@ -5367,3 +5376,95 @@ article {
       transform:scale(0);
     }
   }
+
+  #buy{
+    padding: 20px;
+    .col-lg-2{
+      width: 14.66%;
+    }
+    .top{
+      .ite{
+        width: 38%;
+      }
+      align-items: center;
+      padding: 10px 0px;
+      background-color: #EBEBEB;
+      width: 88%;
+      text-align: center;
+      h5{
+        font-size: 17px
+      }
+    }
+    .number{
+      width: 68%;
+    }
+    span {cursor:pointer; }
+		.minus, .plus{
+      width:10px;
+			height:20px;
+			padding:8px 5px 8px 5px;
+      vertical-align: middle;
+		}
+    .total{
+      background-color: #EBEBEB;
+      width: 88%;
+     padding: 10px;
+        .btn{
+          padding: 5px 100px;
+          font-weight: bold;
+          color: #A07936;
+          background-color: #F7F7F7;
+        }
+        .btn:hover{
+          background-color:#A07936;
+          color: #F7F7F7;
+          transition: .5s;
+          border: none;
+        }
+    }
+    .buy-ptuduct{
+      P{
+        width:40%;
+        font-size: 22px;
+        font-weight: bold;
+      }
+      a{
+        color: #000000;
+      }
+      text-align: center;
+      align-items: center;
+      i{
+        margin-right: 5px;
+      }
+      h6{
+        cursor: pointer;
+        font-size: 20px;
+       width: 55%;
+      }
+      .title{
+       top: 50%;
+       h5{
+        margin-top: 34%;
+        margin-left: 6px;
+       }
+      }
+      .img{
+        align-items: center;
+        width: 45%;
+        img{
+          width: 100%;
+        }
+      }
+      
+    }
+		input{
+			height:31px;
+      width: 42px;
+      text-align: center;
+      font-size: 16px;
+			border:1px solid #ddd;
+			border-radius:4px;
+      vertical-align: middle;
+  }
+  }
+  
