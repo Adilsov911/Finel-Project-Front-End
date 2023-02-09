@@ -4654,7 +4654,6 @@ article {
 .reg{
     border-radius: 10px;
     padding: 30px;
-    margin-left: 37%;
     background-color: #dedee0;
 }
 
@@ -5467,4 +5466,46 @@ article {
       vertical-align: middle;
   }
   }
-  
+  .full{
+    background-color: #5d646b59;
+    padding: 10px;
+  }
+  .profil{
+    
+    margin: 50px 0px;
+    align-items: center;
+    .profil-img{
+      width: 30%;
+      img{
+        border-radius: 5px 5px;
+        width: 90%;
+      }
+    }
+    .left-col1{
+      
+      h5{
+        margin-left: 20px;
+        font-size: 25px;
+        margin-top: 20px;
+        color: rgb(179, 167, 8);
+
+      }
+      h4{
+        font-size: 15px;
+        margin-left: 20px;
+      }
+      
+      
+    }
+  }
+
+  .gradient-custom {
+    /* fallback for old browsers */
+    background: #f6d365;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
+    }

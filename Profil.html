@@ -12,8 +12,7 @@
     <title>Final</title>
 </head>
 <body>
-
-
+    
   <section class="navigation d-none">
     <div class="nav-container">
       <div class="brand">
@@ -180,47 +179,79 @@
       </div>
     </header>
 
-    <section id="top-2">
-        <div class="container d-flex tp">
-            <span>Home /</span> <h6>Login</h6>
-        </div>
-    </section>
-   
-<section id="Contact">
-    <div class="container d-flex  text-center justify-content-center">
-        <div class="leftside col-lg-12 col-4 w-25 reg">
-            <h3>SING IN</h3>
-            
-            <div class="INPUTS">
-                <h6>Enter Email <span>*</span></h6>
-                <input type="email" id="email" name="email">
+<section class="vh-60" style="background-color: #f4f5f7;">
+    <div class="container py-5 h-50">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-lg-6 mb-4 mb-lg-0">
+          <div class="card mb-3" style="border-radius: .5rem;">
+            <div class="row g-0">
+              <div class="col-md-4 gradient-custom text-center text-white"
+                style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
+                <img style="border-radius: 100%; width: 70%;" src="assest/img/blog/blog3.jpg"
+                  alt="Avatar" class="img-fluid my-5" style="width: 80px;" />
+                <h5>Marie Horwitz</h5>
+                <i class="far fa-edit mb-5"></i>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body p-4">
+                  <h6>Information</h6>
+                  <hr class="mt-0 mb-4">
+                  <div class="row pt-1">
+                   
+                    <div class="col-6 mb-3">
+                      <h6>Email</h6>
+                      <p class="text-muted">info@example.com</p>
+                    </div>
+                    <div class="col-6 mb-3">
+                      <h6>UserName</h6>
+                      <p class="text-muted">123 456 789</p>
+                    </div>
+                  </div>
+                  <h6>Update</h6>
+                  <hr class="mt-0 mb-4">
+                  <div class="row pt-1">
+                    <div class="col-6 mb-3">
+                      <h6>Enter Name</h6>
+                      <input asp-for="Name">
+                    </div>
+                    <div class="col-6 mb-3">
+                        <h6>UserName</h6>
+                        <input asp-for="UserName">
+                        <span asp-validation-for="UserName" class="text text-danger"></span>
+                      </div>
+                      <div class="col-6 mb-3">
+                        <h6>Enter Email</h6>
+                        <input asp-for="Email">
+                        <span asp-validation-for="Email" class="text text-danger"></span>
+                      </div>
+                      <div class="col-6 mb-3">
+                        <h6>Enter Password</h6>
+                        <input asp-for="CurrentPassword">
+                    <span asp-validation-for="CurrentPassword" class="text text-danger"></span>
+                      </div>
+                      <div class="col-6 mb-3">
+                        <h6>Enter New Password</h6>
+                        <input asp-for="NewPassword">
+                        <span asp-validation-for="NewPassword" class="text text-danger"></span>
+                      </div>
+                      <div class="col-6 mb-3">
+                        <h6>Confirm Password</h6>
+                        <input asp-for="ConfirmPassword">
+                        <span asp-validation-for="ConfirmPassword" class="text text-danger"></span>
+                      </div>
+                      <button type="submit" class="btn" style="background-color: wheat; color: #ffffff;">Update An Account</button>
+                  </div>
+                 
+                </div>
+              </div>
             </div>
-            <div class="INPUTS">
-                <h6>Password </h6>
-                <input type="password" id="email" name="email">
-            </div>
-            
-            <button type="button" class="btn">LOGIN</button>
+          </div>
         </div>
-    </div>
-    
-</section>
-
-
-
-<section id="Mail">
-    <div class="container">
-      <div class="titles text-center p-4">
-        <h6>NEWSLETTER</h6>
-        <img src="https://cdn.shopify.com/s/files/1/0908/7252/t/4/assets/home_line.png?v=178078056696408182271627441368" alt="">
-      </div>
-      <div class="text-center mail-area">
-        <h6>We promise only send the good things</h6>
-        <input type="email" placeholder="Your Email Address"><i class="fa-regular fa-paper-plane"></i>
       </div>
     </div>
   </section>
-<hr>
+
+    <hr>
   <footer id="footer">
     <div class="container">
       <div class="footer-content d-flex row">
@@ -346,8 +377,6 @@
       </div>
     </div>
   </section>
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assest/js/slick.min.js"></script>

@@ -800,3 +800,4 @@ $('#modal-container').click(function(){
   $('body').removeClass('modal-active');
 });
 
+ 
