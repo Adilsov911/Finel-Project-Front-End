@@ -5509,3 +5509,101 @@ article {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
     }
+    @media only screen and (max-width: 1024px) {
+      .filter-item-selector{
+          width: 56% !important;
+      }
+      .buy-ptuduct{
+        .img{
+          width: 50% !important;
+        }
+      }
+      .ph{
+        display: none !important;
+        
+      }
+      .reg{
+          width: 100% !important;
+          border-radius: 10px;
+          padding: 30px;
+          margin-left: 0% !important;
+          background-color: #dedee0;
+      }
+      .Products{
+          .product{
+              width: 48% !important;
+              .icons{
+                  display: none !important;
+              }
+          }
+      }
+      .carousel{
+  
+          .icons{
+              display: none !important;
+          }
+      }
+      .Categoty{
+  
+          .product{
+              width: 49% !important;
+              .icons{
+                  display: none !important;
+              }
+          }
+      }
+      .navigation{
+          display: block !important;
+  
+      }
+      .time{
+          display: none;
+      }
+      #Map {
+        display: none;
+      }
+      #top{
+          .phone{
+              text-align: end !important;
+          }
+          .login{
+              display: none !important;
+          }
+          .Register{
+              display: none !important;
+          }
+          .logos{
+              display: none !important;
+          }
+          
+      }
+       header{
+          display: none;
+         
+       }
+       #detal{
+          display: block !important;
+       }
+    
+       .about{
+          span{
+              display: none;
+          }
+       }
+       .foto{
+          display: block !important;
+       }
+       .Slider{
+          display: none;
+       }
+       .product{
+          columns: lg -12px;     
+      }
+      #Blog-home{
+          img{
+              display: none;
+          }
+      }
+      
+      
+    }

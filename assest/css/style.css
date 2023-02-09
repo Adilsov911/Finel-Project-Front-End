@@ -343,8 +343,7 @@ header {
 #NewProduct .product .price h6 {
   font-size: 12px;
   color: #8d8686;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
+  text-decoration-line: line-through;
 }
 #NewProduct .product:hover .icons {
   display: block;
@@ -513,8 +512,7 @@ header {
 .carousel .product .price h6 {
   font-size: 12px;
   color: #8d8686;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
+  text-decoration-line: line-through;
 }
 .carousel .priv-arrow {
   position: absolute;
@@ -804,8 +802,7 @@ header {
 #Shop .product .price h6 {
   font-size: 12px;
   color: #8d8686;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
+  text-decoration-line: line-through;
 }
 #Shop .product:hover {
   border: 2px solid #8d8686;
@@ -870,20 +867,6 @@ header {
       font-style: normal
   }*/
 }
-@-webkit-keyframes quick_cart_pay_show {
-  0% {
-    transform: rotate(70deg);
-    right: -100px;
-  }
-  50% {
-    transform: rotate(-20deg);
-    right: 20px;
-  }
-  100% {
-    transform: rotate(0deg);
-    right: 0;
-  }
-}
 @keyframes quick_cart_pay_show {
   0% {
     transform: rotate(70deg);
@@ -896,14 +879,6 @@ header {
   100% {
     transform: rotate(0deg);
     right: 0;
-  }
-}
-@-webkit-keyframes quick_cart_pay_hide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(200px);
   }
 }
 @keyframes quick_cart_pay_hide {
@@ -924,27 +899,7 @@ header {
     opacity: 0;
   }
 }
-@-webkit-keyframes fadeDown {
-  0% {
-    transform: rotate(0deg) translateY(0px);
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(5deg) translateY(5px);
-    opacity: 0;
-  }
-}
 @keyframes fadeUp {
-  0% {
-    transform: rotate(5deg) translateY(5px);
-    opacity: 0;
-  }
-  100% {
-    transform: rotate(0deg) translateY(0px);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeUp {
   0% {
     transform: rotate(5deg) translateY(5px);
     opacity: 0;
@@ -957,20 +912,17 @@ header {
 #detal .fadeDown {
   opacity: 0;
   position: relative;
-  -webkit-animation: fadeDown 400ms ease-in-out;
   animation: fadeDown 400ms ease-in-out;
 }
 #detal .fadeUp {
   opacity: 1 !important;
   position: relative;
-  -webkit-animation: fadeUp 400ms ease-in-out;
   animation: fadeUp 400ms ease-in-out;
 }
 #detal .animateOut {
   position: absolute !important;
   top: 0;
   left: 0;
-  -webkit-animation: quick_cart_pay_hide 200ms ease-in forwards;
   animation: quick_cart_pay_hide 200ms ease-in forwards;
 }
 #detal .quick-cart-product .hide {
@@ -1013,7 +965,6 @@ header {
   width: 56px;
 }
 #detal #quick-cart-pay.open {
-  -webkit-animation: quick_cart_pay_show 1s ease-in-out forwards;
   animation: quick_cart_pay_show 1s ease-in-out forwards;
 }
 #detal #quick-cart-pay.cart-ico strong {
@@ -1182,7 +1133,6 @@ header {
   display: block;
 }
 #detal .quick-cart-product.remove-product {
-  -webkit-animation: quick_cart_pay_hide 200ms ease-in-out forwards;
   animation: quick_cart_pay_hide 200ms ease-in-out forwards;
 }
 #detal .cubic-btn {
@@ -2278,20 +2228,6 @@ header {
 #detal .detail-socials .share-pinterest {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjI2cHgiIGhlaWdodD0iMjZweCIgdmlld0JveD0iMCAwIDI2IDI2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4KICAgIDxnIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01OTQuMDAwMDAwLCAtNzY5LjAwMDAwMCkiPgogICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4My4wMDAwMDAsIDE1Ny4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ0NS4wMDAwMDAsIDYxMi4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2Ni4wMDAwMDAsIDAuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMy40MzcwNjg3LDYuMTE3NjQ3MDYgQzkuNzE2MzUwOTQsNi4xMTc2NDcwNiA3Ljg0MDMzNjEzLDguNzg1MjQyODcgNy44NDAzMzYxMywxMS4wMDk3NzYgQzcuODQwMzM2MTMsMTIuMzU2NzA3NSA4LjM1MDI4NDQzLDEzLjU1NDk5NDYgOS40NDQwMjQ4MSwxNC4wMDE1MzY0IEM5LjYyMzM3MjE0LDE0LjA3NDg1ODQgOS43ODQwMTkzMywxNC4wMDQwNTg4IDkuODM2MDMxOCwxMy44MDU0ODk1IEM5Ljg3MjIxNDM4LDEzLjY2ODA2NTIgOS45NTc4MDAxMSwxMy4zMjEzNzM0IDkuOTk1OTgzMTcsMTMuMTc2OTkxIEMxMC4wNDg0MzA1LDEyLjk4MDU5NjEgMTAuMDI4MDc3OCwxMi45MTE3MTAxIDkuODgzMzQ3NDgsMTIuNzQwNTM4NiBDOS41Njc5Njc1NiwxMi4zNjg1MzY0IDkuMzY2NDQxLDExLjg4Njk0MjcgOS4zNjY0NDEsMTEuMjA0Nzc5MiBDOS4zNjY0NDEsOS4yMjU2OTYyNiAxMC44NDcxNDM3LDcuNDUzOTY3MzEgMTMuMjIyMTQ3Niw3LjQ1Mzk2NzMxIEMxNS4zMjUxNzM0LDcuNDUzOTY3MzEgMTYuNDgwNTgwNyw4LjczODk3MDkyIDE2LjQ4MDU4MDcsMTAuNDU1MTIxMyBDMTYuNDgwNTgwNywxMi43MTMxNDA3IDE1LjQ4MTI5NzcsMTQuNjE4OTAxOCAxMy45OTc4MTE4LDE0LjYxODkwMTggQzEzLjE3ODU3MiwxNC42MTg5MDE4IDEyLjU2NTI5NDYsMTMuOTQxMzQ4MSAxMi43NjE4NjM0LDEzLjExMDM2NjQgQzEyLjk5NzIyNDIsMTIuMTE4MzAyNSAxMy40NTMxNTk1LDExLjA0NzYxMTEgMTMuNDUzMTU5NSwxMC4zMzE1MjY1IEMxMy40NTMxNTk1LDkuNjkwNTAzMyAxMy4xMDkwNzcxLDkuMTU1ODUzNDMgMTIuMzk2OTkzNCw5LjE1NTg1MzQzIEMxMS41NTk0ODgzLDkuMTU1ODUzNDMgMTAuODg2NzE4NCwxMC4wMjIyMzUgMTAuODg2NzE4NCwxMS4xODI4NjA5IEMxMC44ODY3MTg0LDExLjkyMjA4MTYgMTEuMTM2NTE3NCwxMi40MjIwMjc1IDExLjEzNjUxNzQsMTIuNDIyMDI3NSBDMTEuMTM2NTE3NCwxMi40MjIwMjc1IDEwLjI3OTQ0MjQsMTYuMDUzNDE5NSAxMC4xMjkyMzI1LDE2LjY4OTM5OCBDOS44MzAwMzAzNiwxNy45NTU5NjI0IDEwLjA4NDI2NTIsMTkuNTA4NTk1NCAxMC4xMDU3NDg2LDE5LjY2NTQxNTUgQzEwLjExODM2MDMsMTkuNzU4MzA3NCAxMC4yMzc3ODAzLDE5Ljc4MDM5OTYgMTAuMjkxODgwMiwxOS43MTAyMDg5IEMxMC4zNjkxMTYxLDE5LjYwOTQwMjEgMTEuMzY2NTcyNSwxOC4zNzc5NzY2IDExLjcwNTY5NzMsMTcuMTQ3NTA3OCBDMTEuODAxNjMzMywxNi43OTkwNzY0IDEyLjI1NjUyNDksMTQuOTk0OTA0OSAxMi4yNTY1MjQ5LDE0Ljk5NDkwNDkgQzEyLjUyODU5MDEsMTUuNTEzODk4OSAxMy4zMjM4MjQyLDE1Ljk3MTA1MTkgMTQuMTY5NTA1MSwxNS45NzEwNTE5IEMxNi42ODY5NzgsMTUuOTcxMDUxOSAxOC4zOTQ5NTI1LDEzLjY3NTk4MDIgMTguMzk0OTUyNSwxMC42MDM5Mzk2IEMxOC4zOTQ5NTI1LDguMjgxMDM1MDggMTYuNDI3NDM3NSw2LjExNzY0NzA2IDEzLjQzNzA2ODcsNi4xMTc2NDcwNiBMMTMuNDM3MDY4Nyw2LjExNzY0NzA2IFoiIGZpbGw9IiNCNUI3QkQiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==");
 }
-@-webkit-keyframes quick_cart_pay_show {
-  0% {
-    transform: rotate(70deg);
-    right: -100px;
-  }
-  50% {
-    transform: rotate(-20deg);
-    right: 20px;
-  }
-  100% {
-    transform: rotate(0deg);
-    right: 0;
-  }
-}
 @keyframes quick_cart_pay_show {
   0% {
     transform: rotate(70deg);
@@ -2304,16 +2240,6 @@ header {
   100% {
     transform: rotate(0deg);
     right: 0;
-  }
-}
-@-webkit-keyframes quick_cart_pay_hide {
-  0% {
-    transform: rotate(0deg);
-    right: 0;
-  }
-  100% {
-    transform: rotate(70deg);
-    right: -100px;
   }
 }
 @keyframes quick_cart_pay_hide {
@@ -3032,7 +2958,7 @@ header {
     content: "< 850px";
   }
   #detal ._cont,
-#detal .text {
+  #detal .text {
     width: 90%;
   }
   #detal .text {
@@ -3077,7 +3003,7 @@ header {
     padding: 21px 0 26px;
   }
   #detal footer .left,
-#detal footer .right {
+  #detal footer .right {
     float: none;
     text-align: center;
     width: 100%;
@@ -3150,7 +3076,7 @@ header {
     content: "< 760px";
   }
   #detal .text,
-#detal ._cont2 {
+  #detal ._cont2 {
     width: 90%;
   }
   #detal .spinner .q {
@@ -3285,29 +3211,29 @@ header {
     margin-top: 26px;
   }
   #detal .collection-list.cols-4 a,
-#detal .collection-list.cols-3 a {
+  #detal .collection-list.cols-3 a {
     width: 48.27586%;
     float: left;
     margin-right: 3.44828%;
     margin-bottom: 5.26316%;
   }
   #detal .collection-list.cols-4 a:nth-child(3n),
-#detal .collection-list.cols-3 a:nth-child(3n) {
+  #detal .collection-list.cols-3 a:nth-child(3n) {
     width: 48.27586%;
     float: left;
     margin-right: 3.44828%;
   }
   #detal .collection-list.cols-4 a:nth-child(3n+1),
-#detal .collection-list.cols-3 a:nth-child(3n+1) {
+  #detal .collection-list.cols-3 a:nth-child(3n+1) {
     clear: none;
   }
   #detal .collection-list.cols-4 a:nth-child(2n),
-#detal .collection-list.cols-3 a:nth-child(2n) {
+  #detal .collection-list.cols-3 a:nth-child(2n) {
     float: right;
     margin-right: 0;
   }
   #detal .collection-list.cols-4 a:nth-child(2n+1),
-#detal .collection-list.cols-3 a:nth-child(2n+1) {
+  #detal .collection-list.cols-3 a:nth-child(2n+1) {
     clear: both;
   }
   #detal .collection-list a > span {
@@ -3584,7 +3510,7 @@ header {
     content: "< 450px";
   }
   #detal .collection-list.cols-4 a,
-#detal .collection-list.cols-3 a {
+  #detal .collection-list.cols-3 a {
     margin-bottom: 7.14286%;
   }
   #detal #sign-in-popup form .btn {
@@ -4298,10 +4224,8 @@ article {
 }
 
 .search-box {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
@@ -4323,13 +4247,6 @@ article {
 }
 
 .input-search::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 18px;
-  letter-spacing: 2px;
-  font-weight: 100;
-}
-
-.input-search:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.5);
   font-size: 18px;
   letter-spacing: 2px;
@@ -4455,55 +4372,44 @@ article {
 }
 #modal-container.one {
   transform: scaleY(0.01) scaleX(0);
-  -webkit-animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.one .modal-background .modal {
   transform: scale(0);
-  -webkit-animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.one.out {
   transform: scale(1);
-  -webkit-animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.one.out .modal-background .modal {
-  -webkit-animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.two {
   transform: scale(1);
 }
 #modal-container.two .modal-background {
   background: rgba(255, 0, 0, 0);
-  -webkit-animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.two .modal-background .modal {
   opacity: 0;
-  -webkit-animation: scaleUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: scaleUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: scaleUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.two + .content {
-  -webkit-animation: scaleBack 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: scaleBack 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: scaleBack 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.two.out {
-  -webkit-animation: quickScaleDown 0s 0.5s linear forwards;
-          animation: quickScaleDown 0s 0.5s linear forwards;
+  animation: quickScaleDown 0s 0.5s linear forwards;
 }
 #modal-container.two.out .modal-background {
-  -webkit-animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.two.out .modal-background .modal {
-  -webkit-animation: scaleDown 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: scaleDown 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: scaleDown 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.two.out + .content {
-  -webkit-animation: scaleForward 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: scaleForward 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: scaleForward 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.three {
   z-index: 0;
@@ -4513,21 +4419,17 @@ article {
   background: rgba(0, 0, 0, 0.6);
 }
 #modal-container.three .modal-background .modal {
-  -webkit-animation: moveUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: moveUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: moveUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.three + .content {
   z-index: 1;
-  -webkit-animation: slideUpLarge 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: slideUpLarge 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: slideUpLarge 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.three.out .modal-background .modal {
-  -webkit-animation: moveDown 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: moveDown 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: moveDown 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.three.out + .content {
-  -webkit-animation: slideDownLarge 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: slideDownLarge 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: slideDownLarge 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.four {
   z-index: 0;
@@ -4537,21 +4439,17 @@ article {
   background: rgba(0, 0, 0, 0.7);
 }
 #modal-container.four .modal-background .modal {
-  -webkit-animation: blowUpModal 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: blowUpModal 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: blowUpModal 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.four + .content {
   z-index: 1;
-  -webkit-animation: blowUpContent 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: blowUpContent 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: blowUpContent 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.four.out .modal-background .modal {
-  -webkit-animation: blowUpModalTwo 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: blowUpModalTwo 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: blowUpModalTwo 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.four.out + .content {
-  -webkit-animation: blowUpContentTwo 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: blowUpContentTwo 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: blowUpContentTwo 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container .modal {
   width: 37%;
@@ -4562,110 +4460,89 @@ article {
 }
 #modal-container.five .modal-background {
   background: rgba(0, 0, 0, 0);
-  -webkit-animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.five .modal-background .modal {
   transform: translateX(-1500px);
-  -webkit-animation: roadRunnerIn 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: roadRunnerIn 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: roadRunnerIn 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.five.out {
-  -webkit-animation: quickScaleDown 0s 0.5s linear forwards;
-          animation: quickScaleDown 0s 0.5s linear forwards;
+  animation: quickScaleDown 0s 0.5s linear forwards;
 }
 #modal-container.five.out .modal-background {
-  -webkit-animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.five.out .modal-background .modal {
-  -webkit-animation: roadRunnerOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: roadRunnerOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: roadRunnerOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.six {
   transform: scale(1);
 }
 #modal-container.six .modal-background {
   background: rgba(255, 0, 0, 0);
-  -webkit-animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.six .modal-background .modal {
   background-color: transparent;
-  -webkit-animation: modalFadeIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: modalFadeIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: modalFadeIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.six .modal-background .modal h2, #modal-container.six .modal-background .modal p {
   opacity: 0;
   position: relative;
-  -webkit-animation: modalContentFadeIn 0.5s 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: modalContentFadeIn 0.5s 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: modalContentFadeIn 0.5s 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.six .modal-background .modal .modal-svg rect {
-  -webkit-animation: sketchIn 0.5s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: sketchIn 0.5s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: sketchIn 0.5s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.six.out {
-  -webkit-animation: quickScaleDown 0s 0.5s linear forwards;
-          animation: quickScaleDown 0s 0.5s linear forwards;
+  animation: quickScaleDown 0s 0.5s linear forwards;
 }
 #modal-container.six.out .modal-background {
-  -webkit-animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.six.out .modal-background .modal {
-  -webkit-animation: modalFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: modalFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: modalFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.six.out .modal-background .modal h2, #modal-container.six.out .modal-background .modal p {
-  -webkit-animation: modalContentFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: modalContentFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: modalContentFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.six.out .modal-background .modal .modal-svg rect {
-  -webkit-animation: sketchOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: sketchOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: sketchOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.seven {
   transform: scale(1);
 }
 #modal-container.seven .modal-background {
   background: rgba(0, 0, 0, 0);
-  -webkit-animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.seven .modal-background .modal {
   height: 75px;
   width: 75px;
   border-radius: 75px;
   overflow: hidden;
-  -webkit-animation: bondJamesBond 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: bondJamesBond 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: bondJamesBond 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.seven .modal-background .modal h2, #modal-container.seven .modal-background .modal p {
   opacity: 0;
   position: relative;
-  -webkit-animation: modalContentFadeIn 0.5s 1.4s linear forwards;
-          animation: modalContentFadeIn 0.5s 1.4s linear forwards;
+  animation: modalContentFadeIn 0.5s 1.4s linear forwards;
 }
 #modal-container.seven.out {
-  -webkit-animation: slowFade 0.5s 1.5s linear forwards;
-          animation: slowFade 0.5s 1.5s linear forwards;
+  animation: slowFade 0.5s 1.5s linear forwards;
 }
 #modal-container.seven.out .modal-background {
   background: rgba(255, 0, 0, 0);
-  -webkit-animation: fadeToRed 2s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: fadeToRed 2s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: fadeToRed 2s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.seven.out .modal-background .modal {
   border-radius: 3px;
   height: 162px;
   width: 227px;
-  -webkit-animation: killShot 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: killShot 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: killShot 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.seven.out .modal-background .modal h2, #modal-container.seven.out .modal-background .modal p {
-  -webkit-animation: modalContentFadeOut 0.5s 0.5 cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: modalContentFadeOut 0.5s 0.5 cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: modalContentFadeOut 0.5s 0.5 cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container .modal-background {
   display: table-cell;
@@ -4722,17 +4599,6 @@ article {
   max-width: 800px;
   margin: 0 auto;
 }
-@-webkit-keyframes unfoldIn {
-  0% {
-    transform: scaleY(0.005) scaleX(0);
-  }
-  50% {
-    transform: scaleY(0.005) scaleX(1);
-  }
-  100% {
-    transform: scaleY(1) scaleX(1);
-  }
-}
 @keyframes unfoldIn {
   0% {
     transform: scaleY(0.005) scaleX(0);
@@ -4742,17 +4608,6 @@ article {
   }
   100% {
     transform: scaleY(1) scaleX(1);
-  }
-}
-@-webkit-keyframes unfoldOut {
-  0% {
-    transform: scaleY(1) scaleX(1);
-  }
-  50% {
-    transform: scaleY(0.005) scaleX(1);
-  }
-  100% {
-    transform: scaleY(0.005) scaleX(0);
   }
 }
 @keyframes unfoldOut {
@@ -4766,28 +4621,12 @@ article {
     transform: scaleY(0.005) scaleX(0);
   }
 }
-@-webkit-keyframes zoomIn {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 @keyframes zoomIn {
   0% {
     transform: scale(0);
   }
   100% {
     transform: scale(1);
-  }
-}
-@-webkit-keyframes zoomOut {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
   }
 }
 @keyframes zoomOut {
@@ -4798,14 +4637,6 @@ article {
     transform: scale(0);
   }
 }
-@-webkit-keyframes fadeIn {
-  0% {
-    background: rgba(0, 0, 0, 0);
-  }
-  100% {
-    background: rgba(0, 0, 0, 0.7);
-  }
-}
 @keyframes fadeIn {
   0% {
     background: rgba(0, 0, 0, 0);
@@ -4814,30 +4645,12 @@ article {
     background: rgba(0, 0, 0, 0.7);
   }
 }
-@-webkit-keyframes fadeOut {
-  0% {
-    background: rgba(0, 0, 0, 0.7);
-  }
-  100% {
-    background: rgba(0, 0, 0, 0);
-  }
-}
 @keyframes fadeOut {
   0% {
     background: rgba(0, 0, 0, 0.7);
   }
   100% {
     background: rgba(0, 0, 0, 0);
-  }
-}
-@-webkit-keyframes scaleUp {
-  0% {
-    transform: scale(0.8) translateY(1000px);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1) translateY(0px);
-    opacity: 1;
   }
 }
 @keyframes scaleUp {
@@ -4850,16 +4663,6 @@ article {
     opacity: 1;
   }
 }
-@-webkit-keyframes scaleDown {
-  0% {
-    transform: scale(1) translateY(0px);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0.8) translateY(1000px);
-    opacity: 0;
-  }
-}
 @keyframes scaleDown {
   0% {
     transform: scale(1) translateY(0px);
@@ -4870,14 +4673,6 @@ article {
     opacity: 0;
   }
 }
-@-webkit-keyframes scaleBack {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0.85);
-  }
-}
 @keyframes scaleBack {
   0% {
     transform: scale(1);
@@ -4886,31 +4681,12 @@ article {
     transform: scale(0.85);
   }
 }
-@-webkit-keyframes scaleForward {
-  0% {
-    transform: scale(0.85);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 @keyframes scaleForward {
   0% {
     transform: scale(0.85);
   }
   100% {
     transform: scale(1);
-  }
-}
-@-webkit-keyframes quickScaleDown {
-  0% {
-    transform: scale(1);
-  }
-  99.9% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
   }
 }
 @keyframes quickScaleDown {
@@ -4924,28 +4700,12 @@ article {
     transform: scale(0);
   }
 }
-@-webkit-keyframes slideUpLarge {
-  0% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(-100%);
-  }
-}
 @keyframes slideUpLarge {
   0% {
     transform: translateY(0%);
   }
   100% {
     transform: translateY(-100%);
-  }
-}
-@-webkit-keyframes slideDownLarge {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0%);
   }
 }
 @keyframes slideDownLarge {
@@ -4956,14 +4716,6 @@ article {
     transform: translateY(0%);
   }
 }
-@-webkit-keyframes moveUp {
-  0% {
-    transform: translateY(150px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 @keyframes moveUp {
   0% {
     transform: translateY(150px);
@@ -4972,33 +4724,12 @@ article {
     transform: translateY(0);
   }
 }
-@-webkit-keyframes moveDown {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(150px);
-  }
-}
 @keyframes moveDown {
   0% {
     transform: translateY(0px);
   }
   100% {
     transform: translateY(150px);
-  }
-}
-@-webkit-keyframes blowUpContent {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  99.9% {
-    transform: scale(2);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(0);
   }
 }
 @keyframes blowUpContent {
@@ -5014,16 +4745,6 @@ article {
     transform: scale(0);
   }
 }
-@-webkit-keyframes blowUpContentTwo {
-  0% {
-    transform: scale(2);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 @keyframes blowUpContentTwo {
   0% {
     transform: scale(2);
@@ -5034,30 +4755,12 @@ article {
     opacity: 1;
   }
 }
-@-webkit-keyframes blowUpModal {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 @keyframes blowUpModal {
   0% {
     transform: scale(0);
   }
   100% {
     transform: scale(1);
-  }
-}
-@-webkit-keyframes blowUpModalTwo {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0);
-    opacity: 0;
   }
 }
 @keyframes blowUpModalTwo {
@@ -5068,17 +4771,6 @@ article {
   100% {
     transform: scale(0);
     opacity: 0;
-  }
-}
-@-webkit-keyframes roadRunnerIn {
-  0% {
-    transform: translateX(-1500px) skewX(30deg) scaleX(1.3);
-  }
-  70% {
-    transform: translateX(30px) skewX(0deg) scaleX(0.9);
-  }
-  100% {
-    transform: translateX(0px) skewX(0deg) scaleX(1);
   }
 }
 @keyframes roadRunnerIn {
@@ -5092,17 +4784,6 @@ article {
     transform: translateX(0px) skewX(0deg) scaleX(1);
   }
 }
-@-webkit-keyframes roadRunnerOut {
-  0% {
-    transform: translateX(0px) skewX(0deg) scaleX(1);
-  }
-  30% {
-    transform: translateX(-30px) skewX(-5deg) scaleX(0.9);
-  }
-  100% {
-    transform: translateX(1500px) skewX(30deg) scaleX(1.3);
-  }
-}
 @keyframes roadRunnerOut {
   0% {
     transform: translateX(0px) skewX(0deg) scaleX(1);
@@ -5114,28 +4795,12 @@ article {
     transform: translateX(1500px) skewX(30deg) scaleX(1.3);
   }
 }
-@-webkit-keyframes sketchIn {
-  0% {
-    stroke-dashoffset: 778;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
 @keyframes sketchIn {
   0% {
     stroke-dashoffset: 778;
   }
   100% {
     stroke-dashoffset: 0;
-  }
-}
-@-webkit-keyframes sketchOut {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  100% {
-    stroke-dashoffset: 778;
   }
 }
 @keyframes sketchOut {
@@ -5146,14 +4811,6 @@ article {
     stroke-dashoffset: 778;
   }
 }
-@-webkit-keyframes modalFadeIn {
-  0% {
-    background-color: transparent;
-  }
-  100% {
-    background-color: white;
-  }
-}
 @keyframes modalFadeIn {
   0% {
     background-color: transparent;
@@ -5162,30 +4819,12 @@ article {
     background-color: white;
   }
 }
-@-webkit-keyframes modalFadeOut {
-  0% {
-    background-color: white;
-  }
-  100% {
-    background-color: transparent;
-  }
-}
 @keyframes modalFadeOut {
   0% {
     background-color: white;
   }
   100% {
     background-color: transparent;
-  }
-}
-@-webkit-keyframes modalContentFadeIn {
-  0% {
-    opacity: 0;
-    top: -20px;
-  }
-  100% {
-    opacity: 1;
-    top: 0;
   }
 }
 @keyframes modalContentFadeIn {
@@ -5198,16 +4837,6 @@ article {
     top: 0;
   }
 }
-@-webkit-keyframes modalContentFadeOut {
-  0% {
-    opacity: 1;
-    top: 0px;
-  }
-  100% {
-    opacity: 0;
-    top: -20px;
-  }
-}
 @keyframes modalContentFadeOut {
   0% {
     opacity: 1;
@@ -5216,27 +4845,6 @@ article {
   100% {
     opacity: 0;
     top: -20px;
-  }
-}
-@-webkit-keyframes bondJamesBond {
-  0% {
-    transform: translateX(1000px);
-  }
-  80% {
-    transform: translateX(0px);
-    border-radius: 75px;
-    height: 75px;
-    width: 75px;
-  }
-  90% {
-    border-radius: 3px;
-    height: 182px;
-    width: 247px;
-  }
-  100% {
-    border-radius: 3px;
-    height: 162px;
-    width: 227px;
   }
 }
 @keyframes bondJamesBond {
@@ -5260,16 +4868,6 @@ article {
     width: 227px;
   }
 }
-@-webkit-keyframes killShot {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(300px) rotate(45deg);
-    opacity: 0;
-  }
-}
 @keyframes killShot {
   0% {
     transform: translateY(0) rotate(0deg);
@@ -5280,32 +4878,12 @@ article {
     opacity: 0;
   }
 }
-@-webkit-keyframes fadeToRed {
-  0% {
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-  100% {
-    background-color: rgba(255, 0, 0, 0.8);
-  }
-}
 @keyframes fadeToRed {
   0% {
     background-color: rgba(0, 0, 0, 0.6);
   }
   100% {
     background-color: rgba(255, 0, 0, 0.8);
-  }
-}
-@-webkit-keyframes slowFade {
-  0% {
-    opacity: 1;
-  }
-  99.9% {
-    opacity: 0;
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
   }
 }
 @keyframes slowFade {
@@ -5445,4 +5023,81 @@ article {
   /* Chrome 10-25, Safari 5.1-6 */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right bottom, rgb(246, 211, 101), rgb(253, 160, 133));
+}
+
+@media only screen and (max-width: 1024px) {
+  .filter-item-selector {
+    width: 56% !important;
+  }
+  .buy-ptuduct .img {
+    width: 50% !important;
+  }
+  .ph {
+    display: none !important;
+  }
+  .reg {
+    width: 100% !important;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 0% !important;
+    background-color: #dedee0;
+  }
+  .Products .product {
+    width: 48% !important;
+  }
+  .Products .product .icons {
+    display: none !important;
+  }
+  .carousel .icons {
+    display: none !important;
+  }
+  .Categoty .product {
+    width: 49% !important;
+  }
+  .Categoty .product .icons {
+    display: none !important;
+  }
+  .navigation {
+    display: block !important;
+  }
+  .time {
+    display: none;
+  }
+  #Map {
+    display: none;
+  }
+  #top .phone {
+    text-align: end !important;
+  }
+  #top .login {
+    display: none !important;
+  }
+  #top .Register {
+    display: none !important;
+  }
+  #top .logos {
+    display: none !important;
+  }
+  header {
+    display: none;
+  }
+  #detal {
+    display: block !important;
+  }
+  .about span {
+    display: none;
+  }
+  .foto {
+    display: block !important;
+  }
+  .Slider {
+    display: none;
+  }
+  .product {
+    -moz-columns: lg -12px;
+         columns: lg -12px;
+  }
+  #Blog-home img {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
