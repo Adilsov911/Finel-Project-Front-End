@@ -5025,7 +5025,7 @@ article {
   background: linear-gradient(to right bottom, rgb(246, 211, 101), rgb(253, 160, 133));
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1185px) {
   .filter-item-selector {
     width: 56% !important;
   }
