@@ -800,4 +800,48 @@ $('#modal-container').click(function(){
   $('body').removeClass('modal-active');
 });
 
- 
+
+
+if(localStorage.getItem('baskett') === null) {
+  localStorage.setItem('baskett',JSON.stringify([]))
+}
+
+
+let btns = document.getElementsByClassName('btn_addd');
+console.log(btns)
+
+setTimeout(() => {
+for(let btn of btns) {
+    btn.onclick = function(e) {
+        let basket = JSON.parse(localStorage.getItem('baskett'))
+        
+      let price = e.target.parentElement.parentElement.parentElement.children[2].children[1].children[0].innerHTML;
+      console.log(price);
+      price=Number.parseInt(price.slice(1));
+        let title = e.target.parentElement.parentElement.parentElement.children[2].children[0].innerHTML;
+        console.log(title);
+        let image = e.target.parentElement.parentElement.parentElement.parentElement.children[0].children[1].src ;
+            console.log(image);
+        let existProd = basket.find(x => x.Id == id);
+        let filter = basket.filter(x => x.Id != id);
+       
+        if(existProd == undefined) {
+            basket.push({
+                Id: id,
+                Name: title,
+                Price: price,
+                Image: image,
+                Count: 1
+            })
+        }
+        else{
+            existProd.Count += 1;
+        }
+
+        
+
+        localStorage.setItem('baskett',JSON.stringify(basket));
+        CountBasket();
+    }
+}
+}, 1000);
